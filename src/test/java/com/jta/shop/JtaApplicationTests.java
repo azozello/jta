@@ -11,6 +11,6 @@ public class JtaApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	}
 
+	}
 }
