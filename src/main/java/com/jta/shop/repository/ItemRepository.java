@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface ItemRepository extends JpaRepository<Item, Integer> {
 
-        List<Item> findAllByType(String type);
+    List<Item> findAllByType(String type);
 
     Item findItemByName(String name);
 

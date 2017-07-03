@@ -2,7 +2,6 @@ package com.jta.shop.service;
 
 import com.jta.shop.entity.Item;
 import com.jta.shop.repository.ItemRepository;
-import com.jta.shop.service.implementations.ItemServiceImpl;
 
 import com.jta.shop.service.interfaces.ItemService;
 import org.junit.After;
@@ -124,13 +123,13 @@ public class ItemServiceTest {
 
     @Test
     public void updateItemTest() {
-        //Item testItem = itemRepository.findOne(itemRepository.findAll().get(0).getId());
-        //String oldName = testItem.getName();
-        //String newName = "New Name";
-        //assertNotEquals(oldName,newName);
-        //testItem.setName(newName);
-        //itemService.updateItem(testItem);
-        //assertEquals(itemRepository.findOne(itemRepository.findAll().get(0).getId()).getName(), newName);
+        Item testItem = itemRepository.findOne(itemRepository.findAll().get(0).getId());
+        String oldName = testItem.getName();
+        String newName = "New Name";
+        assertNotEquals(oldName,newName);
+        testItem.setName(newName);
+        itemService.updateItem(testItem);
+        assertEquals(itemRepository.findOne(itemRepository.findAll().get(0).getId()).getName(), newName);
     }
 
     @Test

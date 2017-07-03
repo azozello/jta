@@ -55,13 +55,15 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public void updateItem(Item item) {
-        Item updatingItem = getItemById(item.getId());
+        Item updatingItem = itemRepository.findOne(item.getId());
 
         updatingItem.setName(item.getName());
         updatingItem.setType(item.getType());
         updatingItem.setReports(item.getReports());
         updatingItem.setImages(item.getImages());
         updatingItem.setDescription(item.getDescription());
+
+        itemRepository.saveAndFlush(updatingItem);
     }
 
     @Override
