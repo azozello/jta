@@ -15,4 +15,9 @@ public class IndexController {
     public String index(){
         return "index.html";
     }
+
+    @RequestMapping(value = "/next")
+    public String next(){
+        return "pages/next_page.html";
+    }
 }
