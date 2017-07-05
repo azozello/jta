@@ -1,5 +1,6 @@
 package com.jta.shop.service.implementations;
 
+import com.jta.shop.JtaApplication;
 import com.jta.shop.entity.User;
 import com.jta.shop.repository.UserRepository;
 import com.jta.shop.service.interfaces.UserService;
@@ -40,10 +41,12 @@ public class UserServiceImpl implements UserService {
         user.setRole(user.getRole());
 
         userRepository.saveAndFlush(userInDB);
+        JtaApplication.getLogger().info("Updated user: "+user.getUsername());
     }
 
     @Override
     public void insertUser(User user) {
         userRepository.save(user);
+        JtaApplication.getLogger().info("Created user: "+user.getUsername());
     }
 }
