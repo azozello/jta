@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * TODO: USER TEST`S
+ * TODO: Test UserService methods
  */
 @SpringBootApplication
 public class JtaApplication {
