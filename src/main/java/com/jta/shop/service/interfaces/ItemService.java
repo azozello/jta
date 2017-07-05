@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * TODO: Update method
  * @author azozello
  * @since  03.07.17.
  */

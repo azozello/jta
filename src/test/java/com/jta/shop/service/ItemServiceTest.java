@@ -1,12 +1,11 @@
 package com.jta.shop.service;
 
+import com.jta.shop.JtaApplication;
 import com.jta.shop.entity.Item;
 import com.jta.shop.repository.ItemRepository;
 
 import com.jta.shop.service.interfaces.ItemService;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +17,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
+ * TODO: Add DBUnit
  * @author azozello
  * @since  03.07.17.
  */
@@ -34,6 +34,16 @@ public class ItemServiceTest {
 
     private List<Item> productionData;
     private List<Item> testData = new ArrayList<>();
+
+    @BeforeClass
+    public static void setUpClass(){
+        JtaApplication.getLogger().info("Testing started");
+    }
+
+    @AfterClass
+    public static void tearDownClass(){
+        JtaApplication.getLogger().info("Testing ended");
+    }
 
     @Before
     public void setUp(){
