@@ -18,3 +18,4 @@
 2017-07-05 22:29:33 INFO  JtaApplication:127 - Table 'items' cleared
 2017-07-05 22:29:33 INFO  JtaApplication:107 - Updated item 148   Name: New Name                  Type: type1                    
 2017-07-05 22:29:33 INFO  JtaApplication:45 - Testing ended
+2017-07-05 23:42:52 ERROR JtaApplication:36 - 
