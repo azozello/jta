@@ -11,9 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
+    @RequestMapping(value = "/item")
+    public String item(){
+        return "/pages/item.html";
+    }
+
     @RequestMapping(value = "/")
     public String index(){
-        return "index.html";
+        return "pages/index.html";
     }
 
     @RequestMapping(value = "/next")

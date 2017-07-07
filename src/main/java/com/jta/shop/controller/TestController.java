@@ -1,6 +1,5 @@
 package com.jta.shop.controller;
 
-import com.jta.shop.JtaApplication;
 import com.jta.shop.entity.Item;
 import com.jta.shop.service.interfaces.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
