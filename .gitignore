@@ -1,6 +1,6 @@
-.mvn
-.target
+target
 .idea
-*.iws
-*.iml
-*.ipr
+.gitignore
+mvnw
+mvnw.cmd
+shop.iml
